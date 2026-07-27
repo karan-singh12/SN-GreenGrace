@@ -70,19 +70,19 @@ export default function CheckoutPage() {
 
   if (cart.length === 0 && !orderResult) {
     return (
-      <div className="min-h-[70vh] flex flex-col items-center justify-center text-center px-4 gap-6">
-        <div className="w-20 h-20 rounded-full bg-primary/5 flex items-center justify-center text-primary shadow-inner">
+      <div className="min-h-[70vh] flex flex-col items-center justify-center text-center px-4 gap-6 font-plus-jakarta">
+        <div className="w-20 h-20 rounded-full bg-leaf-green/10 flex items-center justify-center text-leaf-green shadow-inner">
           <span className="material-symbols-outlined text-[48px]">shopping_cart_off</span>
         </div>
         <div>
-          <h2 className="font-extrabold text-xl text-on-surface">No Items to Checkout</h2>
+          <h2 className="font-literata text-xl text-forest-deep">No Items to Checkout</h2>
           <p className="text-sm text-on-surface-variant max-w-sm mt-1">
             Your shopping cart is currently empty. Add fresh items from our homepage to proceed.
           </p>
         </div>
         <button
           onClick={() => router.push("/")}
-          className="px-6 py-3 rounded-xl bg-primary text-white font-bold hover:bg-primary-hover active:scale-95 transition-all shadow-sm"
+          className="px-6 py-3 rounded-xl bg-forest-deep text-white font-bold hover:bg-primary active:scale-95 transition-all shadow-sm"
         >
           Go Back Shopping
         </button>
@@ -91,11 +91,11 @@ export default function CheckoutPage() {
   }
 
   return (
-    <div className="min-h-screen px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto py-8">
+    <div className="min-h-screen px-margin-mobile md:px-margin-desktop max-w-[1280px] mx-auto py-8 font-plus-jakarta">
       
       {/* Page Title */}
       <div className="mb-6 md:mb-8">
-        <h2 className="font-extrabold text-xl md:text-2xl text-on-surface tracking-tight">Checkout</h2>
+        <h2 className="font-literata text-xl md:text-2xl text-forest-deep tracking-tight">Checkout</h2>
         <p className="text-xs md:text-sm text-on-surface-variant mt-0.5">Please review your delivery details and place your order</p>
       </div>
 
@@ -105,18 +105,18 @@ export default function CheckoutPage() {
         <div className="lg:col-span-8 flex flex-col gap-6 md:gap-8">
           
           {/* STEP 1: Delivery Address */}
-          <section className="bg-white/80 backdrop-blur-lg border border-white rounded-2xl p-6 shadow-sm relative overflow-hidden">
+          <section className="paper-card border border-outline-variant/30 rounded-2xl p-6 shadow-sm relative overflow-hidden">
             {/* Design indicator strip */}
-            <div className="absolute top-0 left-0 w-1.5 h-full bg-primary" />
+            <div className="absolute top-0 left-0 w-1.5 h-full bg-leaf-green" />
             
             <div className="flex items-center justify-between mb-4 pl-1">
-              <h3 className="font-bold text-base md:text-lg text-on-surface flex items-center gap-2">
-                <span className="material-symbols-outlined text-primary text-[22px]" style={{ fontVariationSettings: "'FILL' 1" }}>
+              <h3 className="font-literata text-base md:text-lg text-forest-deep flex items-center gap-2">
+                <span className="material-symbols-outlined text-leaf-green text-[22px]" style={{ fontVariationSettings: "'FILL' 1" }}>
                   location_on
                 </span>
                 Delivery Address
               </h3>
-              <span className="text-[11px] font-bold uppercase tracking-wider text-primary bg-primary/10 px-2.5 py-1 rounded-md">
+              <span className="text-[11px] font-bold uppercase tracking-wider text-leaf-green bg-leaf-green/10 px-2.5 py-1 rounded-md">
                 Step 1 of 3
               </span>
             </div>
@@ -131,13 +131,13 @@ export default function CheckoutPage() {
                     onClick={() => setSelectedAddress(addr)}
                     className={`cursor-pointer rounded-xl p-4 border-2 transition-all flex items-start gap-3 select-none ${
                       isSelected
-                        ? "border-primary bg-primary/[0.03] shadow-sm"
+                        ? "border-leaf-green bg-leaf-green/[0.03] shadow-sm"
                         : "border-outline-variant/30 hover:border-outline-variant hover:bg-white-matte"
                     }`}
                   >
                     {/* Home/Office Icons */}
                     <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 ${
-                      isSelected ? "bg-primary text-white" : "bg-surface-container text-outline"
+                      isSelected ? "bg-leaf-green text-white" : "bg-surface-container text-outline"
                     }`}>
                       <span className="material-symbols-outlined text-[18px]">
                         {addr.label.toLowerCase() === "home" ? "home" : "business"}
@@ -253,15 +253,15 @@ export default function CheckoutPage() {
                     : "cursor-pointer"
                 } ${
                   deliverySlot.id === EXPRESS_SLOT.id
-                    ? "border-primary bg-primary/[0.03] shadow-sm"
+                    ? "border-leaf-green bg-leaf-green/[0.03] shadow-sm"
                     : selectedAddress?.expressEligible
                       ? "border-outline-variant/30 hover:border-outline-variant hover:bg-white-matte"
                       : ""
                 }`}
               >
                 <div>
-                  <span className="font-bold text-sm text-on-surface flex items-center gap-1">
-                    <span className="material-symbols-outlined text-[18px] text-primary" style={{ fontVariationSettings: "'FILL' 1" }}>
+                  <span className="font-bold text-sm text-on-surface flex items-center gap-1 font-literata">
+                    <span className="material-symbols-outlined text-[18px] text-leaf-green" style={{ fontVariationSettings: "'FILL' 1" }}>
                       bolt
                     </span>
                     Express Delivery
@@ -274,7 +274,7 @@ export default function CheckoutPage() {
                   <span className="font-bold text-sm text-on-surface-variant">₹{EXPRESS_SLOT.price.toFixed(2)}</span>
                   {selectedAddress?.expressEligible && (
                     <span className={`material-symbols-outlined text-[20px] ${
-                      deliverySlot.id === EXPRESS_SLOT.id ? "text-primary" : "text-transparent"
+                      deliverySlot.id === EXPRESS_SLOT.id ? "text-leaf-green" : "text-transparent"
                     }`} style={{ fontVariationSettings: "'FILL' 1" }}>
                       check_circle
                     </span>
@@ -285,22 +285,22 @@ export default function CheckoutPage() {
           </section>
 
           {/* STEP 3: Payment Method */}
-          <section className="bg-white/80 backdrop-blur-lg border border-white rounded-2xl p-6 shadow-sm relative overflow-hidden">
-            <div className="absolute top-0 left-0 w-1.5 h-full bg-primary" />
+          <section className="paper-card border border-outline-variant/30 rounded-2xl p-6 shadow-sm relative overflow-hidden">
+            <div className="absolute top-0 left-0 w-1.5 h-full bg-leaf-green" />
             
             <div className="flex items-center justify-between mb-4 pl-1">
-              <h3 className="font-bold text-base md:text-lg text-on-surface flex items-center gap-2">
-                <span className="material-symbols-outlined text-primary text-[22px]" style={{ fontVariationSettings: "'FILL' 1" }}>
+              <h3 className="font-literata text-base md:text-lg text-forest-deep flex items-center gap-2">
+                <span className="material-symbols-outlined text-leaf-green text-[22px]" style={{ fontVariationSettings: "'FILL' 1" }}>
                   payment
                 </span>
                 Payment Method
               </h3>
-              <span className="text-[11px] font-bold uppercase tracking-wider text-primary bg-primary/10 px-2.5 py-1 rounded-md">
+              <span className="text-[11px] font-bold uppercase tracking-wider text-leaf-green bg-leaf-green/10 px-2.5 py-1 rounded-md">
                 Step 3 of 3
               </span>
             </div>
 
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-3 font-plus-jakarta">
               {PAYMENT_METHODS.map(pm => {
                 const isSelected = paymentMethod.id === pm.id;
                 return (
@@ -309,13 +309,13 @@ export default function CheckoutPage() {
                     onClick={() => setPaymentMethod(pm)}
                     className={`cursor-pointer rounded-xl p-4 border-2 transition-all flex items-center justify-between select-none ${
                       isSelected
-                        ? "border-primary bg-primary/[0.03] shadow-sm"
+                        ? "border-leaf-green bg-leaf-green/[0.03] shadow-sm"
                         : "border-outline-variant/30 hover:border-outline-variant hover:bg-white-matte"
                     }`}
                   >
                     <div className="flex items-center gap-3">
                       <div className={`w-10 h-10 rounded-full flex items-center justify-center shrink-0 ${
-                        isSelected ? "bg-primary text-white" : "bg-surface-container text-outline"
+                        isSelected ? "bg-leaf-green text-white" : "bg-surface-container text-outline"
                       }`}>
                         <span className="material-symbols-outlined text-[20px]">
                           {pm.icon}
@@ -328,7 +328,7 @@ export default function CheckoutPage() {
                     </div>
 
                     <span className={`material-symbols-outlined text-[20px] ${
-                      isSelected ? "text-primary" : "text-transparent"
+                      isSelected ? "text-leaf-green" : "text-transparent"
                     }`} style={{ fontVariationSettings: "'FILL' 1" }}>
                       check_circle
                     </span>
@@ -341,9 +341,9 @@ export default function CheckoutPage() {
         </div>
 
         {/* Right Column: Sticky Summary Box (Span 4) */}
-        <div className="lg:col-span-4 relative">
-          <div className="lg:sticky lg:top-24 bg-white/80 backdrop-blur-lg border border-white rounded-3xl p-6 shadow-md flex flex-col gap-6">
-            <h3 className="font-bold text-base md:text-lg text-on-surface border-b border-outline-variant/20 pb-3">
+        <div className="lg:col-span-4 relative font-plus-jakarta">
+          <div className="lg:sticky lg:top-24 paper-card border border-outline-variant/30 rounded-3xl p-6 shadow-md flex flex-col gap-6">
+            <h3 className="font-literata text-base md:text-lg text-forest-deep border-b border-outline-variant/20 pb-3">
               Order Summary
             </h3>
 

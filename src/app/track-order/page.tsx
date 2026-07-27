@@ -117,21 +117,21 @@ function TrackOrderContent() {
   ];
 
   return (
-    <div className="min-h-screen px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto py-8">
+    <div className="min-h-screen px-margin-mobile md:px-margin-desktop max-w-[1280px] mx-auto py-8 font-plus-jakarta">
       
       {/* Title Header */}
       <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-4 mb-6 md:mb-8">
         <div>
-          <Link href="/profile" className="inline-flex items-center gap-1.5 text-primary text-xs md:text-sm font-semibold hover:opacity-80 transition-opacity mb-2">
+          <Link href="/profile" className="inline-flex items-center gap-1.5 text-earthy-terracotta text-xs md:text-sm font-bold hover:opacity-80 transition-opacity mb-2">
             <span className="material-symbols-outlined text-[16px]">arrow_back</span>
             <span>Back to Profile</span>
           </Link>
-          <h2 className="font-extrabold text-xl md:text-2xl text-on-surface tracking-tight">Track Your Order</h2>
+          <h2 className="font-literata text-xl md:text-2xl text-forest-deep tracking-tight">Track Your Order</h2>
           <p className="text-xs md:text-sm text-on-surface-variant mt-0.5">Real-time status updates for order <strong className="text-on-surface font-semibold">{order.id}</strong></p>
         </div>
 
-        <span className="inline-flex self-start sm:self-auto items-center gap-1 bg-primary/10 text-primary font-bold text-xs px-3.5 py-1.5 rounded-full border border-primary/20 animate-pulse">
-          <span className="w-2 h-2 bg-primary rounded-full"></span>
+        <span className="inline-flex self-start sm:self-auto items-center gap-1 bg-leaf-green/10 text-leaf-green font-bold text-xs px-3.5 py-1.5 rounded-full border border-leaf-green/20 animate-pulse">
+          <span className="w-2 h-2 bg-leaf-green rounded-full"></span>
           <span>Out for Delivery</span>
         </span>
       </div>
@@ -141,8 +141,8 @@ function TrackOrderContent() {
         {/* Left Column: Visual Pipeline Tracker (Span 7) */}
         <div className="lg:col-span-7 flex flex-col gap-6">
           {/* Tracking steps timeline card */}
-          <div className="bg-white/80 backdrop-blur-lg border border-white rounded-3xl p-6 shadow-sm">
-            <h3 className="font-bold text-base md:text-lg text-on-surface border-b border-outline-variant/15 pb-3.5 mb-6">
+          <div className="paper-card border border-outline-variant/30 rounded-3xl p-6 shadow-sm">
+            <h3 className="font-literata text-base md:text-lg text-forest-deep border-b border-outline-variant/15 pb-3.5 mb-6">
               Delivery Timeline
             </h3>
 
@@ -158,9 +158,9 @@ function TrackOrderContent() {
                     {/* Circle Indicator on the line */}
                     <div className={`absolute -left-[30px] w-8 h-8 rounded-full border-4 border-white flex items-center justify-center shadow-md shrink-0 z-10 transition-colors duration-300 ${
                       isCompleted 
-                        ? "bg-primary text-white" 
+                        ? "bg-leaf-green text-white" 
                         : isActive 
-                          ? "bg-primary text-white scale-110 ring-4 ring-primary/20" 
+                          ? "bg-leaf-green text-white scale-110 ring-4 ring-leaf-green/20" 
                           : "bg-surface-container text-outline"
                     }`}>
                       <span className="material-symbols-outlined text-[16px] font-bold">
@@ -170,8 +170,8 @@ function TrackOrderContent() {
 
                     <div className="flex-1 min-w-0">
                       <div className="flex justify-between items-baseline gap-2">
-                        <h4 className={`font-bold text-sm md:text-base leading-none ${
-                          isActive ? "text-primary text-[15px] md:text-[17px]" : "text-on-surface"
+                        <h4 className={`font-literata text-sm md:text-base leading-none ${
+                          isActive ? "text-leaf-green text-[15px] md:text-[17px] font-bold" : "text-forest-deep font-semibold"
                         }`}>
                           {step.title}
                         </h4>
@@ -190,14 +190,14 @@ function TrackOrderContent() {
           </div>
 
           {/* Delivery driver profile details */}
-          <div className="bg-white/80 border border-white rounded-3xl p-5 md:p-6 shadow-sm flex items-center justify-between gap-4">
+          <div className="paper-card border border-outline-variant/30 rounded-3xl p-5 md:p-6 shadow-sm flex items-center justify-between gap-4">
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center text-primary text-lg font-extrabold shadow-inner shrink-0">
+              <div className="w-12 h-12 rounded-full bg-leaf-green/10 flex items-center justify-center text-leaf-green text-lg font-extrabold shadow-inner shrink-0">
                 D
               </div>
               <div>
                 <span className="text-[10px] font-bold text-outline uppercase tracking-wider block">Your Delivery Hero</span>
-                <span className="font-extrabold text-sm md:text-base text-on-surface block leading-tight">David Miller</span>
+                <span className="font-literata text-sm md:text-base text-forest-deep block leading-tight">David Miller</span>
                 <span className="text-xs text-on-surface-variant font-medium mt-0.5 block">⚡ Electric Eco-Scooter • CA-ECO-782</span>
               </div>
             </div>

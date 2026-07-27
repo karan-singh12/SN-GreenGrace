@@ -83,8 +83,8 @@ export default function Navbar() {
               </Link>
 
               {/* Interactive Cart Button */}
-              <button
-                onClick={() => setIsCartOpen(true)}
+              <Link
+                href="/cart"
                 className="relative flex items-center gap-1.5 md:gap-2 px-3 py-2 rounded-xl bg-primary text-on-primary font-semibold text-xs md:text-sm shadow-md active:scale-95 hover:bg-primary-hover transition-all duration-200 cursor-pointer"
               >
                 <span className="material-symbols-outlined text-[18px] md:text-[20px]" style={{ fontVariationSettings: "'FILL' 0" }}>
@@ -96,7 +96,7 @@ export default function Navbar() {
                     {cartItemCount}
                   </span>
                 )}
-              </button>
+              </Link>
             </>
           ) : (
             /* Spacer for centering layout checkout titles */

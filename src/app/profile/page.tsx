@@ -43,32 +43,31 @@ export default function ProfilePage() {
       // Add each item to cart
       addToCart(item.product);
     });
-    setIsCartOpen(true);
-    router.push("/");
+    router.push("/cart");
   };
 
   return (
-    <div className="min-h-screen px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto py-8">
+    <div className="min-h-screen px-margin-mobile md:px-margin-desktop max-w-[1280px] mx-auto py-8">
       
       {/* Profile Header section - Matte Glass panel */}
-      <section className="frosted-matte-glass rounded-3xl p-6 md:p-8 flex flex-col md:flex-row items-center md:items-start gap-6 border border-white shadow-sm mb-8">
-        <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-primary-container/20 flex items-center justify-center text-primary border-4 border-white shadow-md text-3xl font-extrabold select-none shrink-0">
+      <section className="paper-card rounded-3xl p-6 md:p-8 flex flex-col md:flex-row items-center md:items-start gap-6 border border-outline-variant/30 shadow-sm mb-8">
+        <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-leaf-green/10 flex items-center justify-center text-leaf-green border-4 border-white shadow-md text-3xl font-extrabold select-none shrink-0 font-literata">
           JD
         </div>
         <div className="flex-1 text-center md:text-left space-y-1">
           <div className="flex flex-col md:flex-row md:items-center gap-2">
-            <h2 className="font-extrabold text-xl md:text-2xl text-on-surface">{name}</h2>
-            <span className="inline-block self-center md:self-auto px-2.5 py-0.5 rounded-full bg-primary/10 text-primary font-bold text-[10px] uppercase tracking-wider">
+            <h2 className="font-literata text-xl md:text-2xl text-forest-deep">{name}</h2>
+            <span className="inline-block self-center md:self-auto px-2.5 py-0.5 rounded-full bg-leaf-green/10 text-leaf-green font-bold text-[10px] uppercase tracking-wider font-plus-jakarta">
               Premium Member
             </span>
           </div>
-          <p className="text-xs md:text-sm text-on-surface-variant font-medium">{email} • {phone}</p>
-          <p className="text-[11px] text-outline font-semibold mt-2">Member since July 2024</p>
+          <p className="text-xs md:text-sm text-on-surface-variant font-medium font-plus-jakarta">{email} • {phone}</p>
+          <p className="text-[11px] text-outline font-semibold mt-2 font-plus-jakarta">Member since July 2024</p>
         </div>
       </section>
 
       {/* Main Content splits */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start font-plus-jakarta">
         
         {/* Navigation Sidebar Tabs (Span 3) */}
         <aside className="lg:col-span-3 flex lg:flex-col gap-2 overflow-x-auto hide-scrollbar -mx-margin-mobile px-margin-mobile lg:mx-0 lg:px-0 pb-2 lg:pb-0 select-none">
@@ -76,8 +75,8 @@ export default function ProfilePage() {
             onClick={() => setActiveTab("orders")}
             className={`flex items-center gap-2 px-5 py-3 rounded-xl font-bold text-xs md:text-sm whitespace-nowrap transition-all duration-200 cursor-pointer ${
               activeTab === "orders"
-                ? "bg-primary text-on-primary shadow-sm"
-                : "bg-white/60 text-on-surface-variant hover:bg-white border border-white/50"
+                ? "bg-forest-deep text-white shadow-sm"
+                : "bg-white/80 text-on-surface-variant hover:bg-white border border-outline-variant/30"
             }`}
           >
             <span className="material-symbols-outlined text-[20px]">receipt_long</span>
@@ -88,8 +87,8 @@ export default function ProfilePage() {
             onClick={() => setActiveTab("addresses")}
             className={`flex items-center gap-2 px-5 py-3 rounded-xl font-bold text-xs md:text-sm whitespace-nowrap transition-all duration-200 cursor-pointer ${
               activeTab === "addresses"
-                ? "bg-primary text-on-primary shadow-sm"
-                : "bg-white/60 text-on-surface-variant hover:bg-white border border-white/50"
+                ? "bg-forest-deep text-white shadow-sm"
+                : "bg-white/80 text-on-surface-variant hover:bg-white border border-outline-variant/30"
             }`}
           >
             <span className="material-symbols-outlined text-[20px]">location_on</span>
@@ -100,8 +99,8 @@ export default function ProfilePage() {
             onClick={() => setActiveTab("settings")}
             className={`flex items-center gap-2 px-5 py-3 rounded-xl font-bold text-xs md:text-sm whitespace-nowrap transition-all duration-200 cursor-pointer ${
               activeTab === "settings"
-                ? "bg-primary text-on-primary shadow-sm"
-                : "bg-white/60 text-on-surface-variant hover:bg-white border border-white/50"
+                ? "bg-forest-deep text-white shadow-sm"
+                : "bg-white/80 text-on-surface-variant hover:bg-white border border-outline-variant/30"
             }`}
           >
             <span className="material-symbols-outlined text-[20px]">settings</span>

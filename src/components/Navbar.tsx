@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useCart } from "../context/CartContext";
 import { useState, useEffect } from "react";
+import Logo from "./Logo";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -27,9 +28,7 @@ export default function Navbar() {
           </Link>
         ) : (
           <Link href="/" className="flex items-center gap-2 active:scale-95 transition-transform">
-            <span className="material-symbols-outlined text-[28px] text-leaf-green" style={{ fontVariationSettings: "'FILL' 1" }}>
-              eco
-            </span>
+            <Logo className="w-8 h-8 md:w-9 md:h-9" />
             <span className="font-literata text-lg md:text-xl text-forest-deep tracking-tight">
               Fresh
             </span>

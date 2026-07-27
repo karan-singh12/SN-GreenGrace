@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Logo from "./Logo";
 
 export default function Footer() {
   return (
@@ -13,7 +14,7 @@ export default function Footer() {
           {/* Brand Signature Column */}
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2 active:scale-95 transition-transform w-fit">
-              <span className="text-2xl">🌿</span>
+              <Logo light={true} className="w-8 h-8 md:w-9 md:h-9" />
               <span className="font-literata text-lg md:text-xl text-white tracking-tight">
                 Fresh
               </span>

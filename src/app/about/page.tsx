@@ -23,7 +23,7 @@ export default function AboutPage() {
           <span className="text-earthy-terracotta sketch-underline">Pure, Organic Food Delivery</span>
         </h1>
         <p className="text-sm md:text-base text-on-surface-variant leading-relaxed font-medium">
-          Fresh was born out of a simple promise: to connect hardworking local farmers directly with urban households, delivering freshly harvested, chemical-free organic produce within minutes.
+          SN Greens was born out of a simple promise: to connect hardworking local farmers directly with urban households, delivering freshly harvested, chemical-free organic produce within minutes.
         </p>
       </section>
 
@@ -90,9 +90,9 @@ export default function AboutPage() {
             "We wanted to build something where eating healthy isn't a chore or a premium luxury. By delivering pure, freshly harvested crops within minutes, we help families reconnect with real food in its natural, untainted form."
           </p>
           <div className="border-t border-outline-variant/10 pt-4 flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-leaf-green/10 flex items-center justify-center font-extrabold text-xs text-leaf-green">FR</div>
+            <div className="w-10 h-10 rounded-full bg-leaf-green/10 flex items-center justify-center font-extrabold text-xs text-leaf-green">SN</div>
             <div>
-              <h5 className="text-xs md:text-sm font-literata text-forest-deep">The Fresh Team</h5>
+              <h5 className="text-xs md:text-sm font-literata text-forest-deep">The SN Greens Team</h5>
               <p className="text-[10px] md:text-xs text-on-surface-variant font-medium">Delhi NCR, India</p>
             </div>
           </div>

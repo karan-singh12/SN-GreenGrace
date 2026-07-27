@@ -27,11 +27,8 @@ export default function Navbar() {
             <span className="sm:hidden">Back</span>
           </Link>
         ) : (
-          <Link href="/" className="flex items-center gap-2 active:scale-95 transition-transform">
-            <Logo className="w-8 h-8 md:w-9 md:h-9" />
-            <span className="font-literata text-lg md:text-xl text-forest-deep tracking-tight">
-              Fresh
-            </span>
+          <Link href="/" className="flex items-center active:scale-95 transition-transform">
+            <Logo className="w-12 h-12 md:w-14 md:h-14" />
           </Link>
         )}
 
@@ -64,22 +61,6 @@ export default function Navbar() {
                 </Link>
               </nav>
 
-              {/* Notifications mock button */}
-              <button className="w-10 h-10 rounded-full flex items-center justify-center text-primary relative active:scale-95 transition-transform hover:bg-white/40 cursor-pointer">
-                <span className="material-symbols-outlined">notifications</span>
-                <span className="absolute top-2.5 right-2.5 w-2 h-2 bg-error rounded-full border border-white"></span>
-              </button>
-
-              {/* User profile tab button */}
-              <Link
-                href="/profile"
-                className="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center border border-primary/20 hover:bg-primary/20 active:scale-95 transition-all"
-                title="View Profile"
-              >
-                <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>
-                  account_circle
-                </span>
-              </Link>
 
               {/* Interactive Cart Button */}
               <Link
@@ -95,6 +76,17 @@ export default function Navbar() {
                     {cartItemCount}
                   </span>
                 )}
+              </Link>
+
+              {/* User profile tab button */}
+              <Link
+                href="/profile"
+                className="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center border border-primary/20 hover:bg-primary/20 active:scale-95 transition-all"
+                title="View Profile"
+              >
+                <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>
+                  account_circle
+                </span>
               </Link>
             </>
           ) : (

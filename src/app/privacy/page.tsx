@@ -23,7 +23,7 @@ export default function PrivacyPage() {
           <section className="space-y-2">
             <h2 className="font-literata text-sm sm:text-base text-forest-deep">1. Introduction</h2>
             <p>
-              Welcome to Fresh. We are committed to protecting your personal data and respecting your privacy. This policy describes how we collect, store, share, and use personal information when you use our website, mobile application, or purchase from our organic delivery service.
+              Welcome to SN Greens. We are committed to protecting your personal data and respecting your privacy. This policy describes how we collect, store, share, and use personal information when you use our website, mobile application, or purchase from our organic delivery service.
             </p>
           </section>
 
@@ -42,7 +42,7 @@ export default function PrivacyPage() {
           <section className="space-y-2">
             <h2 className="font-literata text-sm sm:text-base text-forest-deep">3. How We Use Your Information</h2>
             <p>
-              Fresh uses your data to:
+              SN Greens uses your data to:
             </p>
             <ul className="list-disc pl-5 space-y-1">
               <li>Process and deliver your fresh organic orders.</li>
@@ -55,14 +55,14 @@ export default function PrivacyPage() {
           <section className="space-y-2">
             <h2 className="font-literata text-sm sm:text-base text-forest-deep">4. Data Security</h2>
             <p>
-              We prioritize data safety. All transaction details, payment gateway interactions, and address fields are processed over industry-standard secure connection keys (SSL/TLS). Your credit card credentials or bank login codes are never stored on Fresh local servers.
+              We prioritize data safety. All transaction details, payment gateway interactions, and address fields are processed over industry-standard secure connection keys (SSL/TLS). Your credit card credentials or bank login codes are never stored on SN Greens local servers.
             </p>
           </section>
 
           <section className="space-y-2">
             <h2 className="font-literata text-sm sm:text-base text-forest-deep">5. Contact Us Regarding Your Data</h2>
             <p>
-              If you wish to view, download, or request deletion of your personal account address history and order files, please contact our data safety division at <a href="mailto:privacy@freshdelivery.com" className="text-earthy-terracotta hover:underline">privacy@freshdelivery.com</a>.
+              If you wish to view, download, or request deletion of your personal account address history and order files, please contact our data safety division at <a href="mailto:privacy@sngreens.com" className="text-earthy-terracotta hover:underline">privacy@sngreens.com</a>.
             </p>
           </section>
         </div>

@@ -13,11 +13,8 @@ export default function Footer() {
           
           {/* Brand Signature Column */}
           <div className="space-y-4">
-            <Link href="/" className="flex items-center gap-2 active:scale-95 transition-transform w-fit">
-              <Logo light={true} className="w-8 h-8 md:w-9 md:h-9" />
-              <span className="font-literata text-lg md:text-xl text-white tracking-tight">
-                Fresh
-              </span>
+            <Link href="/" className="flex items-center active:scale-95 transition-transform w-fit">
+              <Logo light={true} className="w-12 h-12 md:w-14 md:h-14" />
             </Link>
             <p className="text-xs text-oatmeal/70 leading-relaxed font-medium">
               Harvested daily and delivered in 30 minutes directly from our local organic farms to your home. 100% organic, pesticide-free, healthy food for your family.
@@ -137,7 +134,7 @@ export default function Footer() {
             <ul className="space-y-3 font-semibold text-xs text-oatmeal/80">
               <li className="flex items-start gap-2">
                 <span className="material-symbols-outlined text-[16px] text-earthy-terracotta shrink-0 mt-0.5">location_on</span>
-                <span>Fresh Corporate Farm, Delhi NCR, India</span>
+                <span>SN Greens Corporate Farm, Delhi NCR, India</span>
               </li>
               <li className="flex items-center gap-2">
                 <span className="material-symbols-outlined text-[16px] text-earthy-terracotta shrink-0">call</span>
@@ -145,7 +142,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <span className="material-symbols-outlined text-[16px] text-earthy-terracotta shrink-0">mail</span>
-                <span>support@greengrace.com</span>
+                <span>support@sngreens.com</span>
               </li>
               <li className="pt-2 border-t border-white/10 mt-3">
                 <Link
@@ -164,7 +161,7 @@ export default function Footer() {
         {/* Footer Bottom Copyright */}
         <div className="border-t border-white/10 mt-12 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-[10px] md:text-xs text-oatmeal/60 font-medium">
-            &copy; {new Date().getFullYear()} Fresh. All rights reserved. Made with love for a healthy life.
+            &copy; {new Date().getFullYear()} SN Greens. All rights reserved. Made with love for a healthy life.
           </p>
           <div className="flex items-center gap-6 text-[10px] md:text-xs font-semibold text-oatmeal/60">
             <Link href="/privacy" className="hover:text-white transition-colors">Privacy</Link>

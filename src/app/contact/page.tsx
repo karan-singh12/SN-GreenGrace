@@ -66,7 +66,7 @@ export default function ContactPage() {
                 <div>
                   <h4 className="font-literata text-forest-deep">Farm Address</h4>
                   <p className="text-on-surface-variant mt-0.5 leading-relaxed">
-                    Fresh Corporate Farm,<br />
+                    SN Greens Corporate Farm,<br />
                     Sector 142, Noida Expressway,<br />
                     Delhi NCR, India
                   </p>
@@ -91,8 +91,8 @@ export default function ContactPage() {
                 <div>
                   <h4 className="font-literata text-forest-deep">Email Support</h4>
                   <p className="text-on-surface-variant mt-0.5 leading-relaxed">
-                    support@freshdelivery.com <br />
-                    partner@freshdelivery.com
+                    support@sngreens.com <br />
+                    partner@sngreens.com
                   </p>
                 </div>
               </div>
@@ -121,7 +121,7 @@ export default function ContactPage() {
                 <div>
                   <h3 className="font-literata text-lg md:text-xl text-forest-deep">Message Sent Successfully!</h3>
                   <p className="text-xs md:text-sm text-on-surface-variant max-w-sm mt-1 leading-relaxed">
-                    Thank you for reaching out to Fresh. Our team will review your inquiry and get back to your email within the next 12-24 hours.
+                    Thank you for reaching out to SN Greens. Our team will review your inquiry and get back to your email within the next 12-24 hours.
                   </p>
                 </div>
                 <button

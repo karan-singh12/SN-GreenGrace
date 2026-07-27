@@ -12,7 +12,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Green Grace - Farm Fresh Delivery",
+  title: "Fresh - Farm Fresh Delivery",
   description: "Order fresh organic vegetables and fruits online directly from our farms.",
 };
 

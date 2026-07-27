@@ -43,7 +43,7 @@ export default function OrderSuccessModal({ order, onClose }: OrderSuccessModalP
             Order Placed Successfully!
           </h2>
           <p className="text-xs md:text-sm text-on-surface-variant font-medium">
-            Thank you for shopping with Green Grace. Your order has been dispatched.
+            Thank you for shopping with Fresh. Your order has been dispatched.
           </p>
         </div>
 

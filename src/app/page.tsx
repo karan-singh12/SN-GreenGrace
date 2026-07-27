@@ -158,7 +158,7 @@ export default function Home() {
 
       {/* ── HOT DEALS SLIDER ── */}
       {!selectedCategory && !loading && products.length > 0 && (
-        <section className="px-margin-mobile md:px-margin-desktop max-w-[1280px] mx-auto py-8 flex flex-col gap-4">
+        <section className="px-4 md:px-12 max-w-[1280px] mx-auto py-8 flex flex-col gap-4">
           <div className="flex justify-between items-baseline">
             <div>
               <h2 className="font-literata text-forest-deep text-lg md:text-2xl">Hot Weekly Deals</h2>
@@ -168,7 +168,7 @@ export default function Home() {
               Swipe <span className="material-symbols-outlined text-[12px]">arrow_forward</span>
             </span>
           </div>
-          <div className="flex gap-4 overflow-x-auto hide-scrollbar pb-2 snap-x -mx-margin-mobile md:mx-0 px-margin-mobile md:px-0">
+          <div className="flex gap-4 overflow-x-auto hide-scrollbar pb-2 snap-x -mx-4 md:mx-0 px-4 md:px-0">
             {[
               { id: "p_tomato", label: "Organic Heirloom Tomato (टमाटर)", sub: "1 kg • Farm Picked", original: "₹80.00", sale: "₹64.00", off: "20% OFF", img: "/images/a1d3e64d43eac5c57a9fdb822a5b4fcc.jpg" },
               { id: "p_avocado", label: "Hass Avocados (एवोकैडो)", sub: "Pack of 3 • Rich Creamy", original: "₹240.00", sale: "₹204.00", off: "15% OFF", img: "/images/89caf15ee7737ed0ca52134825a70d89.jpg" },
@@ -602,7 +602,7 @@ export default function Home() {
       )}
       {/* ── NEW HOMESTEAD PROMISE (WHY US) ── */}
       {!selectedCategory && (
-        <section className="px-margin-mobile md:px-margin-desktop pt-12 pb-0 md:pt-16 md:pb-0 max-w-[1280px] mx-auto">
+        <section className="px-4 md:px-12 pt-12 pb-16 md:pt-16 md:pb-24 max-w-[1280px] mx-auto">
           <div className="text-center mb-10 md:mb-12">
             <h2 className="font-literata text-forest-deep text-2xl md:text-4xl mb-3 sketch-underline">Our Homestead Promise</h2>
             <div className="w-16 h-1 bg-earthy-terracotta/30 mx-auto rounded-full mb-3"></div>

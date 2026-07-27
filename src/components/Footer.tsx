@@ -15,7 +15,7 @@ export default function Footer() {
             <Link href="/" className="flex items-center gap-2 active:scale-95 transition-transform w-fit">
               <span className="text-2xl">🌿</span>
               <span className="font-literata text-lg md:text-xl text-white tracking-tight">
-                Green Grace
+                Fresh
               </span>
             </Link>
             <p className="text-xs text-oatmeal/70 leading-relaxed font-medium">
@@ -136,7 +136,7 @@ export default function Footer() {
             <ul className="space-y-3 font-semibold text-xs text-oatmeal/80">
               <li className="flex items-start gap-2">
                 <span className="material-symbols-outlined text-[16px] text-earthy-terracotta shrink-0 mt-0.5">location_on</span>
-                <span>Green Grace Corporate Farm, Delhi NCR, India</span>
+                <span>Fresh Corporate Farm, Delhi NCR, India</span>
               </li>
               <li className="flex items-center gap-2">
                 <span className="material-symbols-outlined text-[16px] text-earthy-terracotta shrink-0">call</span>
@@ -163,7 +163,7 @@ export default function Footer() {
         {/* Footer Bottom Copyright */}
         <div className="border-t border-white/10 mt-12 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-[10px] md:text-xs text-oatmeal/60 font-medium">
-            &copy; {new Date().getFullYear()} Green Grace. All rights reserved. Made with love for a healthy life.
+            &copy; {new Date().getFullYear()} Fresh. All rights reserved. Made with love for a healthy life.
           </p>
           <div className="flex items-center gap-6 text-[10px] md:text-xs font-semibold text-oatmeal/60">
             <Link href="/privacy" className="hover:text-white transition-colors">Privacy</Link>

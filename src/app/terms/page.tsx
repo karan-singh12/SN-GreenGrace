@@ -23,14 +23,14 @@ export default function TermsPage() {
           <section className="space-y-2">
             <h2 className="font-literata text-sm sm:text-base text-forest-deep">1. Agreement to Terms</h2>
             <p>
-              By accessing the Green Grace platform or ordering our fresh organic delivery service, you agree to be bound by these Terms of Service. If you do not agree, please do not use our platform or request delivery.
+              By accessing the Fresh platform or ordering our fresh organic delivery service, you agree to be bound by these Terms of Service. If you do not agree, please do not use our platform or request delivery.
             </p>
           </section>
 
           <section className="space-y-2">
             <h2 className="font-literata text-sm sm:text-base text-forest-deep">2. Sourcing &amp; Quality Guarantees</h2>
             <p>
-              Green Grace delivers freshly harvested organic fruits, vegetables, and dairy. Given the natural, chemical-free nature of organic crops:
+              Fresh delivers freshly harvested organic fruits, vegetables, and dairy. Given the natural, chemical-free nature of organic crops:
             </p>
             <ul className="list-disc pl-5 space-y-1">
               <li>Individual items may display color or size variations that are natural in organic soil harvesting.</li>
@@ -60,7 +60,7 @@ export default function TermsPage() {
           <section className="space-y-2">
             <h2 className="font-literata text-sm sm:text-base text-forest-deep">5. Inquiries &amp; Legal</h2>
             <p>
-              For legal inquiries or corporate terms, please contact our administrative desk at <a href="mailto:legal@greengrace.com" className="text-earthy-terracotta hover:underline">legal@greengrace.com</a>.
+              For legal inquiries or corporate terms, please contact our administrative desk at <a href="mailto:legal@freshdelivery.com" className="text-earthy-terracotta hover:underline">legal@freshdelivery.com</a>.
             </p>
           </section>
         </div>

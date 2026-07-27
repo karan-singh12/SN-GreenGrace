@@ -70,7 +70,7 @@ export default function ProfilePage() {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start font-plus-jakarta">
         
         {/* Navigation Sidebar Tabs (Span 3) */}
-        <aside className="lg:col-span-3 flex lg:flex-col gap-2 overflow-x-auto hide-scrollbar -mx-margin-mobile px-margin-mobile lg:mx-0 lg:px-0 pb-2 lg:pb-0 select-none">
+        <aside className="lg:col-span-3 flex lg:flex-col gap-2 overflow-x-auto hide-scrollbar -mx-4 px-4 lg:mx-0 lg:px-0 pb-2 lg:pb-0 select-none">
           <button
             onClick={() => setActiveTab("orders")}
             className={`flex items-center gap-2 px-5 py-3 rounded-xl font-bold text-xs md:text-sm whitespace-nowrap transition-all duration-200 cursor-pointer ${

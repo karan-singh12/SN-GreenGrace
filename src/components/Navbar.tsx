@@ -27,11 +27,11 @@ export default function Navbar() {
           </Link>
         ) : (
           <Link href="/" className="flex items-center gap-2 active:scale-95 transition-transform">
-            <span className="material-symbols-outlined text-[28px] text-primary" style={{ fontVariationSettings: "'FILL' 1" }}>
+            <span className="material-symbols-outlined text-[28px] text-leaf-green" style={{ fontVariationSettings: "'FILL' 1" }}>
               eco
             </span>
-            <span className="font-bold text-lg md:text-xl text-primary tracking-tight">
-              Green Grace
+            <span className="font-literata text-lg md:text-xl text-forest-deep tracking-tight">
+              Fresh
             </span>
           </Link>
         )}
